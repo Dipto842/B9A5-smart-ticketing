@@ -4,6 +4,7 @@
 // Select Your Seat
 let totarmone = 0
 let total1=0
+let seat1=1
 const Select  = document.querySelectorAll('.kbd')
 
 
@@ -21,18 +22,7 @@ for (let index = 0; index < Select.length; index++) {
 
 
     })
-    // element.addEventListener('blur',function(e){
 
-    //     // e.target.style. backgroundColor= ""
-
-        
-
-
-    // })
-    // end Select Your Seat
-
-        // name Seat 
-        
     element.addEventListener('click',function(e){
 
        const w = e.target.innerText
@@ -65,6 +55,9 @@ let f = 550
 
 
 
+
+     
+
     })
 
                             // totalprich
@@ -78,7 +71,7 @@ totarmone+=taka
 
 document.getElementById('totalprich').innerText=totarmone
 
-console.log(totarmone);
+
 
     })
 
@@ -123,12 +116,21 @@ const ba = document.getElementById('biog')
         
         document.getElementById('grand').innerText=total1
         
-        console.log(totarmone);
+    
         
         
         })
 
-
+        element.addEventListener('click',function(){
+            const seat = parseInt(document.getElementById('seat').innerText)
+            
+         const ss= seat1+seat
+         
+            const sea =document.getElementById('seat')
+          const d=  sea.innerText=ss
+          
+            console.log( d,'fff') 
+     })
     
 }
                 
@@ -194,7 +196,19 @@ else{
 })
 
 
+const button2=document.getElementById('button2');
 
+button2.addEventListener('click',function(){
+
+const body = document.querySelector('main');
+body.classList.add('hidden')
+const header = document.querySelector('header');
+header.classList.add('hidden')
+
+const nextpart = document.getElementById('nextpart');
+nextpart.classList.remove('hidden')
+
+})
 
 
 
