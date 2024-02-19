@@ -12,6 +12,20 @@ for (let index = 0; index < Select.length; index++) {
     const element = Select[index];
    
 
+    Select[index].addEventListener("click", function() {
+        let selectedHeadings = document.querySelectorAll('.kbd');
+        
+        
+        if (selectedHeadings.length >= 4 && !this.classList.contains("selected")) {
+            alert("|| ৪ সিট এর বেশি নয়  ২ টি হলে ভালো হয় ||");
+            return;
+        }
+    })
+
+
+
+
+    
 
 
     element.addEventListener('focus',function(e){
