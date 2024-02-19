@@ -129,7 +129,7 @@ const ba = document.getElementById('biog')
             const sea =document.getElementById('seat')
           const d=  sea.innerText=ss
           
-            console.log( d,'fff') 
+           
      })
     
 }
