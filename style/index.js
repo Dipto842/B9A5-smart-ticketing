@@ -215,6 +215,16 @@ nextpart.classList.remove('hidden')
 
 
 
+document.addEventListener('click', function tigit(){
+   
+    const ss = document.getElementById('scorl');
+
+    ss.scrollIntoView({
+        behavior:'smooth'
+    })
+    
+    
+    })
 
 
 
